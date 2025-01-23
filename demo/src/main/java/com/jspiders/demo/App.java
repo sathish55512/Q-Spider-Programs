@@ -1,51 +1,25 @@
 package com.jspiders.demo;
 
-import java.util.Scanner;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.jspiders.demo.dto.Student;
 
 public class App {
     public static void main(String[] args) {
-    	Scanner in = new Scanner(System.in);
-
-
-    	System.out.println("CRUD operations");
-    	while(true) {
-    		System.out.println("Select the Operation Needed to Perform");
-    		System.out.println("1:Insert\n2:Update\n3:Delete\n4:Find\n5:Exit");
-    		int choice = in.nextInt();
-    		if(choice == 1){
-    			CRUD.insert();
-    			System.out.println("To Exit press 1 \nFor more Operations Press 2");
-    			if(in.nextInt() == 1) {
-    				break;
-    			}
-    		}
-    		else if(choice == 2){
-    			CRUD.update();
-    			System.out.println("To Exit press 1 \nFor more Operations Press 2");
-    			if(in.nextInt() == 1) {
-    				break;
-    			}
-    		}
-    		else if(choice == 3){
-    			CRUD.delete();
-    			System.out.println("To Exit press 1 \nFor more Operations Press 2");
-    			if(in.nextInt() == 1) {
-    				break;
-    			}
-    		}
-    		else if(choice == 4){
-    			CRUD.find();
-    			System.out.println("To Exit press 1 \nFor more Operations Press 2");
-    			if(in.nextInt() == 1) {
-    				break;
-    			}
-    		}
-    		else if(choice == 5) {
-    			break;
-    		}
-    		else {
-    			System.out.println("Invalid Choice Try Again");
-    		}
-    	}
+        ApplicationContext context = new ClassPathXmlApplicationContext("META-INF/beans.xml");
+//        Object car1 = context.getBean("car1");
+//        Object car2 = context.getBean("car2");
+//        Object car3 = context.getBean("car3");
+//        Object car4 = context.getBean("car4");
+//        Object car5 = context.getBean("car5");
+//        System.out.println(car1);
+//        System.out.println(car2);
+//        System.out.println(car3);
+//        System.out.println(car4);
+//        System.out.println(car5);
+        Object dept1 = context.getBean("dept1");
+        Object dept2 = context.getBean("dept2");
+        System.out.println(dept1+"\n"+dept2);
     }
 }

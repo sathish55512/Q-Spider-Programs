@@ -1,0 +1,81 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<!-- 	
+	<bean id="std1" class = "com.jspiders.demo.dto.Student">
+		<property name="rollNo" value="01"/>
+		<property name="name" value="sathish"/>
+		<property name="email" value="sathish@gmail.com"/>
+		<property name="address" value="chennai"/>
+		<property name="gender" value="Male"/>
+	</bean>
+	<bean id="car1" class = "com.jspiders.demo.dto.CarDetails">
+		<constructor-arg  name="id" value="01" />
+		<constructor-arg  name="brand" value="DODGE" />
+		<constructor-arg  name="name" value="Challenger-SRT" />
+		<constructor-arg  name="color" value="RED" />
+		<constructor-arg  name="mfd" value="17.08.2003" />
+	</bean>
+	<bean id="car2" class = "com.jspiders.demo.dto.CarDetails">
+		<constructor-arg  name="id" value="02" />
+		<constructor-arg  name="brand" value="DODGE" />
+		<constructor-arg  name="name" value="Viper" />
+		<constructor-arg  name="color" value="White_blue" />
+		<constructor-arg  name="mfd" value="17.08.2003" />
+	</bean>
+	<bean id="car3" class = "com.jspiders.demo.dto.CarDetails">
+		<constructor-arg  name="id" value="03" />
+		<constructor-arg  name="brand" value="DODGE" />
+		<constructor-arg  name="name" value="Charger" />
+		<constructor-arg  name="color" value="black" />
+		<constructor-arg  name="mfd" value="17.08.2003" />
+	</bean>
+	<bean id="car4" class = "com.jspiders.demo.dto.CarDetails">
+		<constructor-arg  name="id" value="04" />
+		<constructor-arg  name="brand" value="Lamborghini" />
+		<constructor-arg  name="name" value="X" />
+		<constructor-arg  name="color" value="Black" />
+		<constructor-arg  name="mfd" value="17.08.2003" />
+	</bean>
+	<bean id="car5" class = "com.jspiders.demo.dto.CarDetails">
+		<constructor-arg  name="id" value="05" />
+		<constructor-arg  name="brand" value="Tesla" />
+		<constructor-arg  name="name" value="Model-X" />
+		<constructor-arg  name="color" value="Cyan" />
+		<constructor-arg  name="mfd" value="17.08.2003" />
+	</bean>-->
+	
+	<bean id="dept1" class = "com.jspiders.demo.dto.Department">
+		<property  name="id" value="01" />
+		<property  name="name" value="CSE" />
+		<property  name="email" value="cse@gmail.com" />
+		<property  name="contactNumber" value="9361084758" />
+		<property  name="list">
+			<list>
+				<value>Sathish</value>
+				<value>Suvedha</value>
+				<value>Suresh</value>
+				<value>Mega</value>
+				<value>Mukesh</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="dept2" class = "com.jspiders.demo.dto.Department">
+		<property  name="id" value="02" />
+		<property  name="name" value="ECE" />
+		<property  name="email" value="ece@gmail.com" />
+		<property  name="contactNumber" value="9361084758" />
+		<property  name="list">
+			<list>
+				<value>pavi</value>
+				<value>jass</value>
+				<value>varshini</value>
+				<value>harini</value>
+				<value>sahana</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

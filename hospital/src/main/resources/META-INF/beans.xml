@@ -1,0 +1,63 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<bean id="doctor1" class="com.jspiders.hospital.dto.Doctor">
+		<property name="doctorId" value="01"/>
+		<property name="name" value="Sathish"/>
+		<property name="age" value="21"/>
+		<property name="specialization" value="neurologist"/>
+		<property name="experience" value="2"/>
+		<property name="salary" value="200000"/>
+	</bean>
+	<bean id="doctor2" class="com.jspiders.hospital.dto.Doctor">
+		<property name="doctorId" value="02"/>
+		<property name="name" value="Suvedha"/>
+		<property name="age" value="21"/>
+		<property name="specialization" value="heart_Specalist"/>
+		<property name="experience" value="2"/>
+		<property name="salary" value="200000"/>
+	</bean>
+	<bean id="doctor3" class="com.jspiders.hospital.dto.Doctor">
+		<property name="doctorId" value="01"/>
+		<property name="name" value="Suresh"/>
+		<property name="age" value="21"/>
+		<property name="specialization" value="dermatologist"/>
+		<property name="experience" value="2"/>
+		<property name="salary" value="200000"/>
+	</bean>
+	<bean id="doctor4" class="com.jspiders.hospital.dto.Doctor">
+		<property name="doctorId" value="02"/>
+		<property name="name" value="Mega PriyaDharshini"/>
+		<property name="age" value="21"/>
+		<property name="specialization" value="gynacologist"/>
+		<property name="experience" value="2"/>
+		<property name="salary" value="200000"/>
+	</bean>
+	
+	<bean id="hospital1" class="com.jspiders.hospital.dto.Hospital">
+		<property name="hospitalId" value="01"/>
+		<property name="name" value="S2S"/>
+		<property name="location" value="Erode"/>
+		<property name="listOfDoctors">
+		<list>
+			<ref bean="doctor1"/>
+			<ref bean="doctor2"/>
+		</list>
+		</property>
+	</bean>
+	<bean id="hospital2" class="com.jspiders.hospital.dto.Hospital">
+		<property name="hospitalId" value="02"/>
+		<property name="name" value="S2M"/>
+		<property name="location" value="Coimbatore"/>
+		<property name="listOfDoctors">
+		<list>
+			<ref bean="doctor3"/>
+			<ref bean="doctor4"/>
+		</list>
+		</property>
+	</bean>
+
+	
+</beans>
